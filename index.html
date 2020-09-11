@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+	<body>
+		<header>
+			<div class= "row">
+				<ul class="main-nav">
+					<li class="active"> <a href="index.html"> HOME </a></li>
+					<li> <a href="education.html"> EDUCATION </a></li>
+					<li> <a href="travel.html"> TRAVEL </a></li>
+					<li> <a href="hobbies.html"> HOBBIES </a></li>
+					<li> <a href="other.html"> OTHER </a></li>
+				</ul>
+				<div class="hero">
+					<h1>Welcome.</h1>
+					<h2>Feel free to look around...</h2>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">^--------------Back to Top--------------^</button>
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+  					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    					document.getElementById("myBtn").style.display = "block";
+  					} else {
+    					document.getElementById("myBtn").style.display = "none";
+  					}
+				}
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+				 	document.body.scrollTop = 0; // For Safari
+				 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}</script>
+		</header>
+	</body>
+</html>
